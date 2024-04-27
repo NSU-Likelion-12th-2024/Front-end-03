@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signup.css" />
+    <script
+      src="https://kit.fontawesome.com/32e11bc5c5.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+        @import url(https://fonts.google.com/selection?query=roboto&noto.script=Kore);
+        body{
+            font-family: 'Roboto', serif;
+        }
+    </style>
+<body>
+    <header>
+    <div class="top">
+    <button class="btn1"><i class="fa-brands fa-apple"></i></button>
+    <button class="btn1">스토어</button>
+    <button class="btn1">Mac</button>
+    <button class="btn1">iPad</button>
+    <button class="btn1">iPhone</button>
+    <button class="btn1">Watch</button>
+    <button class="btn1">Airpad</button>
+    <button class="btn1">악세사리</button>
+    <button class="btn1">고객지원</button>
+    <button class="btn1"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div> 
+    <nav>
+        <div class="nav1">Apple ID</div>
+        <div class="nav2">
+        <button class="btn2">로그인</button>
+        <button class="btn2">Apple ID 생성</button>
+        <button class="btn2">FAQ</button>
+        </div>
+    </nav> <hr>   
+    </header>
+    <section>
+        <div class="middle">
+        <div class="text1">Apple ID 생성</div> <br />
+        <div class="text2">하나의 Apple 모든 Apple 서비스를 이용할 수 있습니다.</div> <br />
+        <div class="name">
+            <input id="FN" type="text" placeholder="First Name" required /> <br />
+            <input id="LN" type="text" placeholder="Last Name" required /> <br />
+        </div>  <br />
+        <input id="tel" type="tel" placeholder="telephone" required /> <br />
+        <input id="BD" type="date" placeholder="Birth Date" required /> <br />
+        <input id="E" type="email" placeholder="e-mail" required /> <br />
+        <input id="P" type="password" placeholder="Password" required/> <br />
+        </div>
+        <br />
+        <div class="middle2">
+        <div>번호 확인 방법 </div>
+          <input type="radio" name="check" id="1" required />
+          <label for="1">문자메세지</label>
+
+          <input type="radio" name="check" id="2" required />
+          <label for="2">음성메세지</label>
+          <br />
+        </div>
+        <br />
+          <div class="middle3">
+            <div>
+          <input type="checkbox" id="c-admit" required />
+          <label for="c-admit">광고수신 동의</label>
+          <br />
+            </div>
+            <br />
+        <div>
+          <input type="checkbox" id="i-admit" required />
+          <label for="i-admit">개인정보 수집 동의</label>
+          <br />
+        </div>
+        <br />
+        <input type="submit" class="submitB" value="가입하기" />
+    </div>
+    </section>
+    <br />
+    <footer>
+        <a href="main.html">이전 페이지</a>
+    </footer>
+</body>
+</html>

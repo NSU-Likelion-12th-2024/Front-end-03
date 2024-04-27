@@ -1,0 +1,113 @@
+.top {
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 75px;
+}
+.middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.middle2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.middle3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.btn1 {
+  color: white;
+  background-color: transparent;
+  border: 0px;
+  width: 100px;
+}
+.btn1:hover {
+  font-size: large;
+}
+nav {
+  display: flex;
+  height: 60px;
+}
+.nav1 {
+  width: 1200px;
+  font-size: 30px;
+  padding-top: 30px;
+  padding-left: 30px;
+  font-weight: 600;
+}
+.nav2 {
+  width: 600px;
+  display: flex;
+  color: gray;
+  padding-top: 30px;
+  justify-content: space-evenly;
+  padding-left: 850px;
+}
+.btn2 {
+  color: gray;
+  background-color: transparent;
+  border: 0;
+}
+.text1 {
+  font-size: 25px;
+  font-weight: 600;
+}
+.text2 {
+  font-size: 15px;
+  font-weight: 500;
+}
+.name {
+  display: flex;
+}
+
+#FN,
+#LN {
+  width: 190px;
+  height: 54px;
+}
+#FN {
+  margin-right: 22px;
+}
+#tel,
+#BD,
+#E,
+#P {
+  width: 414px;
+  height: 54px;
+}
+
+#tel:focus,
+#BD:focus,
+#E:focus,
+#P:focus,
+#FN:focus,
+#LN:focus {
+  outline: 1px solid blue;
+}
+footer {
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 75px;
+}
+
+.submitB {
+  color: white;
+  background-color: blue;
+  border: 0px;
+  border-radius: 20px;
+  width: 100px;
+  height: 35px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}

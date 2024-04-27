@@ -1,0 +1,92 @@
+.top {
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 75px;
+}
+.btn1 {
+  color: white;
+  background-color: transparent;
+  border: 0px;
+  width: 100px;
+}
+.btn1:hover {
+  font-size: large;
+}
+.nav1 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  width: 700px;
+  margin: 0 auto;
+}
+햣 nav {
+  background-color: #fbfbfd;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.n1 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.seca {
+  color: blue;
+}
+.seca:hover {
+  text-decoration: underline;
+}
+.a1:hover {
+  color: blue;
+}
+.buy {
+  color: white;
+  background-color: blue;
+  border: 0px;
+  border-radius: 20px;
+  width: 100px;
+  height: 35px;
+}
+.tex1 {
+  color: #a8a8ab;
+  font-size: small;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.tex2 {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+.tex3 {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+.sec1 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.sec2 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-bottom: 15px;
+}
+footer {
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 75px;
+}
+.foot1 {
+  color: white;
+}
