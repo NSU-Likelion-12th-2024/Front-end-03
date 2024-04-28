@@ -78,7 +78,8 @@ nav {
 #tel,
 #BD,
 #E,
-#P {
+#P,
+#nation {
   width: 414px;
   height: 54px;
 }
@@ -88,7 +89,8 @@ nav {
 #E:focus,
 #P:focus,
 #FN:focus,
-#LN:focus {
+#LN:focus,
+#nation:focus {
   outline: 1px solid blue;
 }
 footer {
