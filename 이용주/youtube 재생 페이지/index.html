@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+</head>
+<style>
+    /*전체 스타일*/
+    * {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    }
+
+    body {
+        background-color: black;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    header {
+        width: 100%;
+        position: fixed;
+        height: 50px;
+        border: 1px solid black;
+        background-color: black;
+        color: white;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    #banner {
+        line-height: 5px;
+        font-size: 50px;
+        float: left;
+        width: 5%;
+    }
+
+    #logo {
+        float: left;
+        width: 15%;
+
+    }
+
+    #logo a {
+        color: white;
+    }
+
+    #search {
+        float: left;
+        width: 50%;
+        height: inherit;
+        text-align: center;
+        padding-top: 5px;
+        padding-left: 15%;
+        box-sizing: border-box;
+    }
+
+    #search ul {
+        width: 100%;
+    }
+
+    #search ul li {
+        float: left;
+        border: 1px solid #ccc;
+    }
+
+    #search ul li:nth-child(1) {
+        width: 60%;
+        border-radius: 8px 0px 0 8px;
+        height: 25px;
+        line-height: 25px;
+        color: #ccc;
+        text-align: left;
+        font-size: 12px;
+        padding-left: 10px;
+        box-sizing: border-box;
+    }
+
+    #search ul li:nth-child(2) {
+        width: 10%;
+        border-radius: 0px 8px 8px 0px;
+        height: 25px;
+        line-height: 20px;
+        color: white;
+        box-sizing: border-box;
+        font-size: 20px;
+        background-color: #ccc;
+    }
+
+    #search ul li:nth-child(3) {
+        width: 25px;
+        height: 25px;
+        border-radius: 100%;
+        margin-left: 20px;
+        background: url(images/mike.png) no-repeat center center;
+        background-size: cover;
+    }
+
+    #search ul li:nth-child(1):hover {
+        border-color: blue;
+        /*제이쿼리 사용 .click*/
+    }
+
+    #icon {
+        float: right;
+        width: 20%;
+        height: inherit;
+
+    }
+
+    #icon ul {
+        float: right;
+    }
+
+    #icon ul li {
+        float: left;
+
+        border-radius: 100%;
+        width: 25px;
+        height: 25px;
+        text-align: center;
+        line-height: 25px;
+        margin-right: 10px;
+    }
+
+    #icon ul li:nth-child(1) {
+        background: url(images/video.jpeg) no-repeat center center;
+        width: 25px;
+        height: 25px;
+        background-size: cover;
+        border-radius: 100%;
+    }
+
+    #icon ul li:nth-child(2) {
+        background-color: #ccc;
+    }
+
+    #icon ul li:nth-child(3) {
+        margin-right: 0;
+        background-color: purple;
+    }
+
+    main {
+        width: 100%;
+        padding: 70px 8% 0px 8%;
+        background-color: black;
+        box-sizing: border-box;
+        display: flex;
+    }
+
+    #left {
+        width: 70%;
+        margin-right: 1%;
+        ;
+    }
+
+    #right {
+        width: 28%;
+        background-color: black;
+    }
+
+    #play {
+        border-radius: 8px;
+
+        height: 530px;
+        background: url(images/play.png) no-repeat center center;
+        background-size: cover;
+        margin-bottom: 10px;
+        background-color: purple;
+    }
+
+    .title h4 {
+        color: white;
+        font-family: 'Nanum Gothic', sans-serif;
+        margin-bottom: 10px;
+    }
+
+    #section {
+        width: 100%;
+        display: flex;
+        height: 6%;
+    }
+
+    #nav {
+        width: 50%;
+    }
+
+    #nav ul {
+        height: 50px;
+    }
+
+    #nav ul li {
+        color: white;
+        float: left;
+    }
+
+    #nav ul li:nth-child(1) {
+        border-radius: 100%;
+        width: 30px;
+        height: 30px;
+        background: url(images/id.jpeg) no-repeat center center;
+        background-size: cover;
+        margin-right: 10px;
+    }
+
+    #nav ul li:nth-child(2) {
+        font-family: 'Nanum Gothic', sans-serif;
+        font-size: 12px;
+        margin-right: 20px;
+    }
+
+    #nav ul li:nth-child(2) span {
+        font-size: 9px;
+    }
+
+    #nav ul li:nth-child(2) p {
+        margin-top: 2px;
+        font-size: 10px;
+        color: #ccc;
+
+    }
+
+    #nav ul li:nth-child(3) {
+        border-radius: 15px 15px 15px 15px;
+        width: 50px;
+        height: 30px;
+        font-size: 13px;
+        background-color: white;
+        color: black;
+        line-height: 30px;
+        text-align: center;
+        font-family: 'Nanum Gothic', sans-serif;
+    }
+
+    #right ul li {
+        float: left;
+        color: #ccc;
+    }
+
+    #nav2 {
+        width: 50%;
+        color: white;
+    }
+
+    #nav2 ul li {
+        float: left;
+        font-family: 'Nanum Gothic', sans-serif;
+        background-color: #474747;
+        height: 30px;
+        line-height: 30px;
+        padding: 0 14px;
+        margin-right: 1%;
+        border-radius: 15px 15px 15px 15px;
+        font-size: 10px;
+    }
+
+    #nav2 ul li:nth-child(1) {
+        border-radius: 15px 0 0 15px;
+        margin-right: 0;
+        padding: 0 5px;
+        padding-left: 14px;
+    }
+
+    #nav2 ul li:nth-child(2) {
+        border-radius: 0px 15px 15px 0px;
+        padding: 0 5px;
+        padding-right: 14px;
+    }
+
+    #nav2 ul li:nth-child(7) {
+        line-height: 20px;
+        font-size: 17px;
+        font-weight: bold;
+        padding: 0 9px;
+    }
+
+    #nav2 ul li:hover {
+        background-color: #606060;
+    }
+
+    #view {
+        width: 100%;
+        background-color: #ccc;
+        border-radius: 8px;
+        background-color: #474747;
+        font-size: 13px;
+        font-family: 'Nanum Gothic', sans-serif;
+        padding: 7px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    #view span {
+        color: white;
+    }
+
+    #view #hash {
+        color: #aba5a5;
+    }
+
+    #view p {
+        color: rgb(132, 132, 241);
+    }
+
+    #view #plus {
+        color: white;
+    }
+
+    #text_title {
+        color: white;
+    }
+
+    #text_title #one {
+        font-weight: bold;
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    #text_title #one #two {
+        font-size: 12px;
+        padding-bottom: 10px;
+        margin-left: 20px;
+    }
+
+    #text_leftside {
+        border-radius: 100%;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        background-color: purple;
+        float: left;
+    }
+
+    #text_rightside {
+        float: left;
+        font-size: 10px;
+        padding-bottom: 4px;
+        box-sizing: border-box;
+        margin-left: 15px;
+        border-bottom: 1px solid #aba5a5;
+        color: #aba5a5;
+        width: 94.8%;
+    }
+
+    #text {
+        color: white;
+        margin-top: 54px;
+    }
+
+    #text .leftside {
+        border-radius: 100%;
+        width: 30px;
+        height: 30px;
+        background-color: red;
+        float: left;
+    }
+
+    #text .rightside {
+        width: 94.8%;
+        float: left;
+        margin-left: 15px;
+        width: 94.8%;
+        font-size: 11px;
+        line-height: 15px;
+    }
+
+    #text .rightside span {
+        color: #aba5a5;
+        font-size: 10px;
+    }
+
+    #text .rightside ul {
+        margin-top: 3px;
+        margin-bottom: 30px;
+    }
+
+    #text .rightside ul li {
+        float: left;
+        width: 40px;
+    }
+
+    #text .leftside2 {
+        background-color: blue;
+        border-radius: 100%;
+        width: 30px;
+        height: 30px;
+        float: left;
+    }
+
+    #text .leftside3 {
+        background-color: yellow;
+        border-radius: 100%;
+        width: 30px;
+        height: 30px;
+        float: left;
+    }
+
+    #right {
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    #right_nav ul {
+        width: 100%;
+       
+    }
+
+    #right_nav ul li {
+        padding: 3px 8px;
+        font-size: 12px;
+        border: 1px solid #ccc;
+        text-align: center;
+        height: 20px;
+        line-height: 20px;
+        margin-right: 8px;
+        border-radius: 8px;
+        font-weight: 500;
+        background-color: #474747;
+        font-family: 'Nanum Gothic', sans-serif;
+        
+
+    }
+    #right_nav ul li:hover{
+        background-color: #707070;
+       
+    }
+
+    #right_nav ul li:nth-child(1) {
+        color: black;
+        background-color: white;
+    }
+
+    #right_nav ul em {
+        color: white;
+        margin-left: 6px;
+        font-size: 20px;
+    }
+
+    .right_video {
+        margin-top: 20px;
+        width: 100%;
+        height: 70px;
+    }
+
+    .right_video ul {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .right_video ul li:nth-child(1) {
+        background: url(images/ex.png) no-repeat center center;
+        background-size: cover;
+        width: 38%;
+        float: left;
+        height: 68px;
+        border-radius: 8px;
+    }
+
+    .right_video ul li:nth-child(2) {
+        margin-left: 10px;
+        float: left;
+        font-size: 10px;
+        width: 50%;
+    }
+
+    .right_video .right_title {
+        font-size: 12px;
+        font-weight: 600;
+        margin-bottom: 4px;
+    }
+
+    .name {
+        color: #848080;
+    }
+
+    .num {
+        color: #848080;
+    }
+</style>
+
+<body>
+    <header>
+        <div id="banner">
+            -<br>
+            -<br>
+            -
+        </div>
+        <div id="logo">
+            <a href="#"> youtube</a>
+        </div>
+        <div id="search">
+            <ul>
+                <li>검색</li>
+                <li>⌕</li>
+                <li></li>
+            </ul>
+        </div>
+        <div id="icon">
+            <ul>
+                <li></li>
+                <li>🔔</li>
+                <li>슬</li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div id="left">
+            <div id="play">
+            </div>
+            <div class="title">
+                <h4>𝐏𝐥𝐚𝐲𝐥𝐢𝐬𝐭 트렌디한 힙합 레이블 AOMG 노래모음ㅣ 로꼬, 쿠기, 그레이, 쌈디, 우원재, 박재범</h4>
+            </div>
+            <div id="section">
+                <div id="nav">
+                    <ul>
+                        <li></li>
+                        <li>때껄룩<span>TAKE A LOOK</span>
+                            <P>구독자 161만명</P>
+                        </li>
+                        <li>구독</li>
+                    </ul>
+                </div>
+                <div id="nav2">
+                    <ul>
+                        <li>👍︎ 4.1천 &nbsp;|</li>
+                        <li>👎︎</li>
+                        <li>→ &nbsp;공유</li>
+                        <li>↓ &nbsp;오프라인 저장</li>
+                        <li>↘ &nbsp;클립</li>
+                        <li>+ &nbsp;저장</li>
+                        <li>...</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="view">
+                <span id="num">조회수 51만회 2개월전 </span><span id="hash">#aomg #박재범 #국내힙합</span>
+                <p>#playlist #플레이리스트 #aomg</p>
+                <p>#박재범 #국내힙합</p>
+                <p id="plus">...더보기</p>
+            </div>
+            <div id="text_title">
+                <span id="one">댓글 62개<span id="two">▼ 정렬기준</span></span>
+                <div id="total">
+                    <div id="text_leftside">
+                        슬
+                    </div>
+                    <div id="text_rightside">
+                        댓글추가...
+                    </div>
+                </div>
+            </div>
+            <div id="text">
+                <div class="leftside">
+
+                </div>
+                <div class="rightside">
+                    @1 <span>1일전</span><br>
+                    11111.
+                    <ul>
+                        <li>👍︎ 26</li>
+                        <li>👎︎ 4</li>
+                        <li>답글</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="text">
+                <div class="leftside2">
+
+                </div>
+                <div class="rightside">
+                    @1 <span>1일전</span><br>
+                    222222.
+                    <ul>
+                        <li>👍︎ 4</li>
+                        <li>👎︎ 360</li>
+                        <li>답글</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="text">
+                <div class="leftside3">
+
+                </div>
+                <div class="rightside">
+                    @1 <span>1일전</span><br>
+                    333333.
+                    <ul>
+                        <li>👍︎ 50</li>
+                        <li>👎︎ 7</li>
+                        <li>답글</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        <div id="right">
+            <div id="right_nav">
+                <ul>
+                    <li>모두</li>
+                    <li>indong 인동제공</li>
+                    <li>관련 콘텐츠</li>
+                    <li>힙합</li>
+                    <em>></em>
+                </ul>
+            </div>
+            <div class="right_video">
+                <ul>
+                    <li></li>
+                    <li>
+                        <div class="right_title">Play List_새벽 감성 느끼고 싶을 때</div>
+                        <div class="name">몽핸지</div>
+                        <div class="num">조회수 892회ㆍ5일전</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="right_video">
+                <ul>
+                    <li></li>
+                    <li>
+                        <div class="right_title">Play List_새벽 감성 느끼고 싶을 때</div>
+                        <div class="name">몽핸지</div>
+                        <div class="num">조회수 892회ㆍ5일전</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="right_video">
+                <ul>
+                    <li></li>
+                    <li>
+                        <div class="right_title">Play List_새벽 감성 느끼고 싶을 때</div>
+                        <div class="name">몽핸지</div>
+                        <div class="num">조회수 892회ㆍ5일전</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="right_video">
+                <ul>
+                    <li></li>
+                    <li>
+                        <div class="right_title">Play List_새벽 감성 느끼고 싶을 때</div>
+                        <div class="name">몽핸지</div>
+                        <div class="num">조회수 892회ㆍ5일전</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="right_video">
+                <ul>
+                    <li></li>
+                    <li>
+                        <div class="right_title">Play List_새벽 감성 느끼고 싶을 때</div>
+                        <div class="name">몽핸지</div>
+                        <div class="num">조회수 892회ㆍ5일전</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="right_video">
+                <ul>
+                    <li></li>
+                    <li>
+                        <div class="right_title">Play List_새벽 감성 느끼고 싶을 때</div>
+                        <div class="name">몽핸지</div>
+                        <div class="num">조회수 892회ㆍ5일전</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="right_video">
+                <ul>
+                    <li></li>
+                    <li>
+                        <div class="right_title">Play List_새벽 감성 느끼고 싶을 때</div>
+                        <div class="name">몽핸지</div>
+                        <div class="num">조회수 892회ㆍ5일전</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="right_video">
+                <ul>
+                    <li></li>
+                    <li>
+                        <div class="right_title">Play List_새벽 감성 느끼고 싶을 때</div>
+                        <div class="name">몽핸지</div>
+                        <div class="num">조회수 892회ㆍ5일전</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
