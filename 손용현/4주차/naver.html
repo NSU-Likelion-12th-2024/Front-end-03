@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="naver.css" />
+    <script
+      src="https://kit.fontawesome.com/32e11bc5c5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="naver.js" defer></script>
+  </head>
+  <body>
+    <div id="form_id">
+      <i class="fa-regular fa-user"></i>
+      <input type="text" id="form_id_input" placeholder="아이디" />
+      <div class="naver">naver.com</div>
+    </div>
+
+    <div id="form_pass">
+      <i class="fa-solid fa-lock"></i>
+      <input type="password" id="form_pass_input" placeholder="비밀번호" />
+      <i class="fa-regular fa-eye-slash eyeicon"></i>
+    </div>
+
+    <div id="form_eml">
+      <i class="fa-regular fa-envelope"></i>
+      <input
+        type="text"
+        id="form_email_input"
+        placeholder="[선택] 이메일주소 (비밀번호 찾기 등 본인 확인용)"
+      />
+    </div>
+
+    <ul id="form_ul1"></ul>
+    <ul id="form_ul2"></ul>
+    <ul id="form_ul3"></ul>
+
+    <div class="radiobtn_all">
+      <div class="radiobtn_g">
+        <input type="radio" name="gender" id="male" />
+        <label for="male" class="malebtn">남자</label>
+        <input type="radio" name="gender" id="female" />
+        <label for="female" class="femalebtn">여자</label>
+      </div>
+      <div class="radiobtn_n">
+        <input type="radio" name="nation" id="local" />
+        <label for="local" class="korbtn">내국인</label>
+        <input type="radio" name="nation" id="foreigner" />
+        <label for="foreigner" class="foribtn">외국인</label>
+      </div>
+    </div>
+  </body>
+</html>

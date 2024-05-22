@@ -1,0 +1,234 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+header {
+  display: flex;
+}
+.menu-group {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 10vw;
+  height: 70px;
+  background-color: black;
+  margin: 0px;
+}
+.menu {
+  background-color: white;
+  height: 34px;
+  width: 34px;
+  margin-left: 10px;
+  border: 1px solid gray;
+}
+.youtubetext {
+  font-size: 25px;
+  font-weight: 900;
+  color: white;
+  border-radius: 50px 0px 0px 50px;
+  margin-left: 15px;
+}
+
+.search-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 80vw;
+  height: 70px;
+}
+.menu-group {
+  display: flex;
+  justify-content: left;
+  margin-left: 0;
+  padding-left: 0;
+}
+.search {
+  width: 475px;
+  height: 40px;
+  border: 1px solid gray;
+  border-right: none;
+  border-radius: 50px 0px 0px 50px;
+  font-size: larger;
+}
+.mg-icon {
+  height: 44px;
+  width: 55px;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 0px 50px 50px 0px;
+}
+.mic-icon {
+  height: 34px;
+  width: 34px;
+  border: 1px solid gray;
+  border-radius: 50px;
+  background-color: white;
+  margin-left: 10px;
+}
+
+.user-group {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 10vw;
+  height: 70px;
+  background-color: black;
+}
+.user,
+.sub-profile {
+  height: 50px;
+  width: 50px;
+  border: 1px solid gray;
+  border-radius: 50px;
+  background-color: white;
+  margin: 0px 5px 0px 5px;
+}
+.user:active,
+.mg-icon:active,
+.mic-icon:active {
+  border-color: gainsboro;
+}
+section {
+  width: 67vw;
+  height: 1500px;
+  background-color: black;
+  align-items: center;
+  flex-direction: column;
+}
+.video {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 20px;
+  font-weight: 900;
+  padding-left: 70px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  color: white;
+}
+
+.subscribe-group {
+  display: flex;
+  padding-left: 70px;
+  height: 50px;
+}
+.profile {
+  width: 14vw;
+}
+.cha-sub-text {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  margin-left: 7px;
+}
+.sub-user1 {
+  color: white;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+.sub-user2 {
+  color: white;
+  font-size: 10px;
+}
+
+.typebutton {
+  width: 51vw;
+  justify-content: flex-start;
+}
+.subbutton-style {
+  width: 70px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: gray;
+  color: white;
+  margin: 0px 5px 0px 5px;
+  font-weight: 600;
+  margin-right: 375px;
+}
+
+.system-button-style {
+  width: auto;
+  height: 40px;
+  border-radius: 25px;
+  background-color: gray;
+  color: white;
+  margin: 0px 5px 0px 5px;
+  font-weight: 600;
+}
+
+.system-button-style2 {
+  width: 50px;
+  height: 40px;
+  border-radius: 25px;
+  background-color: gray;
+  color: white;
+  margin: 0px 5px 0px 5px;
+  font-size: x-large;
+  font-weight: 600;
+}
+
+.info {
+  background-color: grey;
+  margin-top: 20px;
+  width: 935px;
+  padding: 2px;
+  border-radius: 10px;
+}
+.info1 {
+  color: ghostwhite;
+  font-size: x-small;
+}
+.info2 {
+  color: purple;
+  margin: 5px;
+}
+main {
+  display: flex;
+  background-color: black;
+}
+
+.aside-button {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 20px;
+}
+
+.aside-button-style {
+  width: auto;
+  height: 40px;
+  border-radius: 10px;
+  background-color: gray;
+  color: white;
+  margin: 0px 5px 0px 5px;
+  font-weight: 600;
+  border: 1px solid white;
+}
+
+aside {
+  justify-content: flex-start;
+}
+
+.ab {
+  color: white;
+  font-size: xx-large;
+  padding-left: 10px;
+}
+
+.title1 {
+  color: white;
+  margin-left: 10px;
+}
+
+.title2 {
+  color: gainsboro;
+  font-size: small;
+  margin-left: 10px;
+}
+
+.playlist {
+  display: flex;
+}
+
+.playlist2 {
+}

@@ -1,0 +1,123 @@
+#form_pass,
+#form_id,
+#form_eml,
+#btn_All,
+.radiobtn_all {
+  width: 400px;
+  height: 50px;
+  border: 2px solid lightgray;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#form_id {
+  border-bottom: 1px solid lightgray;
+}
+#form_pass {
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+#form_eml {
+  border-top: 1px solid lightgray;
+}
+.eyeicon,
+.naver {
+  position: absolute;
+  right: 15px;
+}
+.naver {
+  color: grey;
+}
+#form_pass_input,
+#form_id_input,
+#form_email_input {
+  border: none;
+  width: 300px;
+  padding-left: 10px;
+}
+#form_id {
+  border-radius: 10px 10px 0px 0px;
+}
+
+#form_eml {
+  border-radius: 0px 0px 10px 10px;
+}
+#form_pass_input:focus,
+#form_email_input:focus,
+#form_id_input:focus {
+  outline: none;
+}
+.form_alert {
+  border: 2px solid red !important;
+}
+
+.fa-user,
+.fa-lock,
+.fa-envelope {
+  padding-left: 10px;
+}
+
+.radiobtn_all {
+  display: flex;
+}
+
+#male,
+#female,
+#local,
+#foreigner {
+  height: 30px;
+  width: 95px;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.malebtn {
+  margin-right: -4px;
+  border-radius: 5px 0px 0px 5px;
+}
+.femalebtn {
+  margin-left: -3px;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.korbtn {
+  margin-right: -4px;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.foribtn {
+  margin-left: -3px;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.radiobtn_g {
+  margin-right: 3px;
+  margin-left: 9px;
+}
+
+.radiobtn_n {
+  margin-left: 3px;
+}
+
+.radiobtn_all input[type="radio"] {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  border: 2px solid #ccc;
+  text-align: center;
+  padding-top: 5px;
+  color: #ccc;
+  width: 90px;
+  height: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: white;
+}
+
+input[type="radio"]:checked + label {
+  color: #2db400;
+  border-color: #2db400;
+}
