@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네이버 회원가입</title>
+    <link rel="stylesheet" href="naver.css">
+    <script src="https://kit.fontawesome.com/380516ad29.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="wrap">
+        <h3>NAVER</h3>
+        <ul class="section1">
+            <li>
+                <i class="fa-regular fa-user icon"></i>
+                <input type="text" name="" class="id base" placeholder="아이디">
+                <span class="id_right">@naver.com</span>
+            </li>
+            <li>
+                <i class="fa-solid fa-lock icon"></i>
+                <input type="password" name="" class="pwd base" placeholder="비밀번호">
+            </li>
+            <li>
+                <i class="fa-regular fa-envelope icon"></i>
+                <input type="text" class="mail base" placeholder="[선택] 이메일주소 (비밀번호 찾기 등 본인 확인용)">
+            </li>
+        </ul>
+        <ul class="error"></ul>
+        <ul class="section1 two">
+            <li>
+                <i class="fa-regular fa-user icon"></i>
+                <input type="text" name="" class="name base" placeholder="이름">
+            </li>
+            <li>
+                <i class="fa-solid fa-calendar-days icon"></i>
+                <input type="text" name="" class="birth base" placeholder="생년월일 8자리">
+            </li>
+            <li>
+                <div class="left">
+            <label class="ra le">
+              <input type="radio" name="sex" id="" value="남자" class="le"><span>남자</span>
+            </label>
+            <label class="ra">
+              <input type="radio" name="sex" id="" value="여자"><span>여자</span>
+            </label>
+        </div>
+        <div class="right">
+            <label class="ra">
+              <input type="radio" name="sex" id="" value="내국인"><span>내국인</span>
+            </label>
+            <label class="ra">
+              <input type="radio" name="sex" id="" value="외국인"><span>외국인</span>
+            </label>
+        </div>
+            </li>
+            <li>
+                <i class="fa-solid fa-mobile icon"></i>
+                <input type="text" name="" class="phone base" placeholder="휴대전화번호">
+            </li>
+        </ul>
+        <ul class="error2"></ul>
+      <input type="submit" value="인증요청">
+    </div>
+   <script src="./naver.js"></script>
+</body>
+</html>
